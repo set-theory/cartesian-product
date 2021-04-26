@@ -1,0 +1,35 @@
+/**
+ * Algorithm used by {@link product} to compute the product of one or more
+ * iterables from pools of symbols.
+ *
+ * @example
+ * // Ax Ay Bx By Cx Cy Dx Dy
+ * _product(['xy', 'ABCD'], 0 , 2) ;
+ *
+ * @example
+ * // 000 001 010 011 100 101 110 111
+ * _product([[0,1],[0,1],[0,1]], 0 , 3) ;
+ *
+ * @param {any[][]} pools - The pools of symbols in reverse order.
+ * @param {number} i - Index of the pool to draw the next symbol from
+ * @param {number} n - Number of pools in total.
+ * @returns {IterableIterator}
+ */
+export default function* _product(pools, i, n) {
+	if (i === n) {
+		yield [];
+		return;
+	}
+
+	const iterable = pools[i];
+
+	for (const buffer of _product(pools, i + 1, n)) {
+		for (const item of iterable) {
+			buffer.push(item);
+
+			yield buffer;
+
+			buffer.pop(item);
+		}
+	}
+}
