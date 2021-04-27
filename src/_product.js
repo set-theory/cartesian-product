@@ -10,7 +10,7 @@
  * // 000 001 010 011 100 101 110 111
  * _product([[0,1],[0,1],[0,1]], 0 , 3) ;
  *
- * @param {any[][]} pools - The pools of symbols in reverse order.
+ * @param {Array<Iterable>} pools - The pools of symbols in reverse order.
  * @param {number} i - Index of the pool to draw the next symbol from
  * @param {number} n - Number of pools in total.
  * @returns {IterableIterator}

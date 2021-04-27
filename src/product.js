@@ -17,9 +17,9 @@ import _product from './_product.js';
  * // 000 001 010 011 100 101 110 111
  * product([range(2)], 3) ;
  *
- * @param {Iterable} iterables - The input iterables.
- * @param {Number} repeat - The number of times to cycle through the input iterables.
- * @return {Iterator}
+ * @param {Iterable<Iterable>} iterables - The input iterables.
+ * @param {number} repeat - The number of times to cycle through the input iterables.
+ * @return {IterableIterator}
  */
 
 export default function product(iterables, repeat = 1) {
