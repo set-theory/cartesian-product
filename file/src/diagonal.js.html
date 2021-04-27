@@ -39,7 +39,9 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/diagonal.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {deque} from &apos;@aureooms/js-collections-deque&apos;;
 
-import {iter, _next, count} from &apos;@aureooms/js-itertools&apos;;
+import {iter} from &apos;@iterable-iterator/iter&apos;;
+import {_next} from &apos;@iterable-iterator/next&apos;;
+import {count} from &apos;@iterable-iterator/count&apos;;
 
 /**
  * Computes the product of two iterables in a way that allows for one or both
