@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | @set-theory/cartesian-product</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Cartesian product for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@set-theory/cartesian-product"><meta property="twitter:description" content="Cartesian product for JavaScript"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/set-theory/cartesian-product"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_product">_product</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-diagonal">diagonal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-product">product</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-x---a-href--https---set-theory-github-io-cartesian-product---set-theory-cartesian-product--a-">:x: <a href="https://set-theory.github.io/cartesian-product">@set-theory/cartesian-product</a></h1><p>Cartesian product for JavaScript.
+See <a href="https://set-theory.github.io/cartesian-product/index.html">docs</a>.</p>
+<blockquote>
+<p>:warning: Depending on your environment, the code may require
+<code>regeneratorRuntime</code> to be defined, for instance by importing
+<a href="https://www.npmjs.com/package/regenerator-runtime">regenerator-runtime/runtime</a>.</p>
+</blockquote>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { product } from &apos;@set-theory/cartesian-product&apos; ;
+product( [ &quot;ABCD&quot; , &quot;xy&quot; ] , 1 ) ; // Ax Ay Bx By Cx Cy Dx Dy
+
+import { range } from &apos;@aureooms/js-itertools&apos; ;
+product( [ range( 2 ) ] , 3 ) ; // 000 001 010 011 100 101 110 111
+
+product( [ range( 4 ) , range( 4 ) ] ) ; // 00 01 02 03 10 11 12 13 20 21 ...
+
+import { diagonal } from &apos;@set-theory/cartesian-product&apos; ;
+diagonal( range( 4 ) , range( 4 ) ) ; // 00 01 10 02 11 20 03 12 21 30 ...
+
+import { count } from &apos;@aureooms/js-itertools&apos; ;
+product( [count( ), count( )] ) ; // Loops forever without yielding. DO NOT DO THIS
+diagonal( count( ), count( ) ) ; // 00 01 10 02 11 20 03 12 21 30 ...
+import { _product } from &apos;@set-theory/cartesian-product&apos; ;
+_product( [count( ), count( )], 0, 2 ) ; // 00 01 02 03 04 05 06 07 08 09 ...</code>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/set-theory/cartesian-product/main/LICENSE"><img src="https://img.shields.io/github/license/set-theory/cartesian-product.svg" alt="License"></a>
+<a href="https://www.npmjs.org/package/@set-theory/cartesian-product"><img src="https://img.shields.io/npm/v/@set-theory/cartesian-product.svg" alt="Version"></a>
+<a href="https://github.com/set-theory/cartesian-product/actions/workflows/ci:test.yml?query=branch:main"><img src="https://img.shields.io/github/workflow/status/set-theory/cartesian-product/ci:test?event=push&amp;label=tests" alt="Tests"></a>
+<a href="https://david-dm.org/set-theory/cartesian-product"><img src="https://img.shields.io/david/set-theory/cartesian-product.svg" alt="Dependencies"></a>
+<a href="https://david-dm.org/set-theory/cartesian-product?type=dev"><img src="https://img.shields.io/david/dev/set-theory/cartesian-product.svg" alt="Dev dependencies"></a>
+<a href="https://github.com/set-theory/cartesian-product/issues"><img src="https://img.shields.io/github/issues/set-theory/cartesian-product.svg" alt="GitHub issues"></a>
+<a href="https://www.npmjs.org/package/@set-theory/cartesian-product"><img src="https://img.shields.io/npm/dm/@set-theory/cartesian-product.svg" alt="Downloads"></a></p>
+<p><a href="https://codeclimate.com/github/set-theory/cartesian-product/issues"><img src="https://img.shields.io/codeclimate/issues/set-theory/cartesian-product.svg" alt="Code issues"></a>
+<a href="https://codeclimate.com/github/set-theory/cartesian-product/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/set-theory/cartesian-product.svg" alt="Code maintainability"></a>
+<a href="https://codecov.io/gh/set-theory/cartesian-product"><img src="https://img.shields.io/codecov/c/gh/set-theory/cartesian-product/main.svg" alt="Code coverage (cov)"></a>
+<a href="https://codeclimate.com/github/set-theory/cartesian-product/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/set-theory/cartesian-product.svg" alt="Code technical debt"></a>
+<a href="https://set-theory.github.io/cartesian-product/source.html"><img src="https://set-theory.github.io/cartesian-product/badge.svg" alt="Documentation"></a>
+<a href="https://bundlephobia.com/result?p=@set-theory/cartesian-product"><img src="https://img.shields.io/bundlephobia/minzip/@set-theory/cartesian-product" alt="Package size"></a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
