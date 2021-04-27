@@ -2,16 +2,9 @@ import test from 'ava';
 
 import {lexicographical, increasing} from '@aureooms/js-compare';
 
-import {
-	list,
-	diagonal,
-	range,
-	count,
-	take,
-	sorted,
-} from '@aureooms/js-itertools';
+import {list, range, count, take, sorted} from '@aureooms/js-itertools';
 
-import {product} from '../../src/index.js';
+import {product, diagonal} from '../../src/index.js';
 
 test('diagonal docstring example', (t) => {
 	const result = list(diagonal(range(2), range(2)));
