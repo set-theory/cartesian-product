@@ -1,4 +1,4 @@
-:x: [@set-theory/cartesian-product](https://set-theory.github.io/cartesian-product)
+:heavy_multiplication_x: [@set-theory/cartesian-product](https://set-theory.github.io/cartesian-product)
 ==
 
 Cartesian product for JavaScript.
