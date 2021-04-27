@@ -1,6 +1,8 @@
 import {deque} from '@aureooms/js-collections-deque';
 
-import {iter, _next, count} from '@aureooms/js-itertools';
+import {iter} from '@iterable-iterator/iter';
+import {_next} from '@iterable-iterator/next';
+import {count} from '@iterable-iterator/count';
 
 /**
  * Computes the product of two iterables in a way that allows for one or both

@@ -1,4 +1,7 @@
-import {list, ncycle, map, reversed} from '@aureooms/js-itertools';
+import {list} from '@iterable-iterator/list';
+import {reversed} from '@iterable-iterator/reversed';
+import {ncycle} from '@iterable-iterator/cycle';
+import {map} from '@iterable-iterator/map';
 
 import _product from './_product.js';
 

@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {list} from '@aureooms/js-itertools';
+import {list} from '@iterable-iterator/list';
 
 import {product} from '../../src/index.js';
 

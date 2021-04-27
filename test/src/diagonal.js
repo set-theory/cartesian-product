@@ -2,7 +2,10 @@ import test from 'ava';
 
 import {lexicographical, increasing} from '@aureooms/js-compare';
 
-import {list, range, count, take, sorted} from '@aureooms/js-itertools';
+import {take, sorted} from '@aureooms/js-itertools';
+import {list} from '@iterable-iterator/list';
+import {range} from '@iterable-iterator/range';
+import {count} from '@iterable-iterator/count';
 
 import {product, diagonal} from '../../src/index.js';
 

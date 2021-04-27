@@ -12,7 +12,7 @@ See [docs](https://set-theory.github.io/cartesian-product/index.html).
 import { product } from '@set-theory/cartesian-product' ;
 product( [ "ABCD" , "xy" ] , 1 ) ; // Ax Ay Bx By Cx Cy Dx Dy
 
-import { range } from '@aureooms/js-itertools' ;
+import { range } from '@iterable-iterator/range' ;
 product( [ range( 2 ) ] , 3 ) ; // 000 001 010 011 100 101 110 111
 
 product( [ range( 4 ) , range( 4 ) ] ) ; // 00 01 02 03 10 11 12 13 20 21 ...
@@ -20,7 +20,7 @@ product( [ range( 4 ) , range( 4 ) ] ) ; // 00 01 02 03 10 11 12 13 20 21 ...
 import { diagonal } from '@set-theory/cartesian-product' ;
 diagonal( range( 4 ) , range( 4 ) ) ; // 00 01 10 02 11 20 03 12 21 30 ...
 
-import { count } from '@aureooms/js-itertools' ;
+import { count } from '@iterable-iterator/count' ;
 product( [count( ), count( )] ) ; // Loops forever without yielding. DO NOT DO THIS
 diagonal( count( ), count( ) ) ; // 00 01 10 02 11 20 03 12 21 30 ...
 import { _product } from '@set-theory/cartesian-product' ;
