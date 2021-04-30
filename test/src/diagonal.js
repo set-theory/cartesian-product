@@ -1,6 +1,7 @@
 import test from 'ava';
 
-import {lexicographical, increasing} from '@aureooms/js-compare';
+import {increasing} from '@total-order/primitive';
+import {lexicographical} from '@total-order/lex';
 
 import {take, sorted} from '@aureooms/js-itertools';
 import {list} from '@iterable-iterator/list';

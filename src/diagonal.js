@@ -1,4 +1,4 @@
-import {deque} from '@aureooms/js-collections-deque';
+import {deque} from '@data-structure/deque';
 
 import {iter} from '@iterable-iterator/iter';
 import {_next} from '@iterable-iterator/next';
