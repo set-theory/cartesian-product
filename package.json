@@ -75,7 +75,7 @@
     "@babel/preset-env": "7.14.0",
     "@babel/register": "7.13.16",
     "@commitlint/cli": "12.1.1",
-    "@iterable-iterator/range": "0.0.1",
+    "@iterable-iterator/range": "1.0.0",
     "@js-library/commitlint-config": "0.0.4",
     "@total-order/lex": "0.0.1",
     "@total-order/primitive": "0.0.2",
