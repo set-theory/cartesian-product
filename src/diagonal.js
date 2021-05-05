@@ -6,14 +6,14 @@ import {count} from '@iterable-iterator/count';
 
 /**
  * Computes the product of two iterables in a way that allows for one or both
- * of them to be infinite (in constrast with {@link product}).
+ * of them to be infinite (in contrast with {@link product}).
  * Although the output iterator may be infinite, it is guaranteed that each
  * value of the product is located at some finite position in the output
  * iterator.
  *
  * If one of the two inputs has finite size N, it is guaranteed that memory
  * usage never exceeds O(N) values. If both inputs have infinite size, then
- * memory usage grows proportionately to the square root of the number of
+ * memory usage grows proportionally to the square root of the number of
  * output pairs.
  *
  * @example
