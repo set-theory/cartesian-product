@@ -3,7 +3,8 @@ import test from 'ava';
 import {increasing} from '@total-order/primitive';
 import {lexicographical} from '@total-order/lex';
 
-import {take, sorted} from '@aureooms/js-itertools';
+import {take} from '@iterable-iterator/slice';
+import {sorted} from '@iterable-iterator/sorted';
 import {list} from '@iterable-iterator/list';
 import {range} from '@iterable-iterator/range';
 import {count} from '@iterable-iterator/count';
