@@ -1432,7 +1432,7 @@
   resolved "https://registry.yarnpkg.com/@iterable-iterator/reversed/-/reversed-0.0.2.tgz#a8f0e5338d6eeba75a2f596aeae0347edcc0607a"
   integrity sha512-RtvSHRBvdm4gzgfkA+6R1TrgPK5JfqN7yKqxLpkfedf2ajiJ3YFTfUAGmTY/ud9fBPwxdt9Js9HT8oXGRw2COQ==
 
-"@iterable-iterator/slice@^0.0.1":
+"@iterable-iterator/slice@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/slice/-/slice-0.0.1.tgz#62a8e15435714787659563ad0bc4138e52f5baf2"
   integrity sha512-8U0wLGf3lgZY/MSvmkCwjVF6mivwp3MEY6gCBbD+I6qvJk2Xy7PAWK22lcg69kQKoqGc2HviGeLzDfMh1DNpGw==
