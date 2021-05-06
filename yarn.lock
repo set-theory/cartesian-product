@@ -1441,10 +1441,10 @@
     "@iterable-iterator/consume" "^0.0.1"
     "@iterable-iterator/iter" "^0.0.2"
 
-"@iterable-iterator/sorted@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@iterable-iterator/sorted/-/sorted-0.0.1.tgz#246a6f4a719c1e9f7ef1ad5d5edf27dba8c9ecc7"
-  integrity sha512-3KeX3XtIqLT1ppK5EvslGUfG/ZU0e28jedP9NFdBCsgN4YK+o/PjEIoYeEK22lugu9kiiiNX4nmGW74QpIa3Kw==
+"@iterable-iterator/sorted@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@iterable-iterator/sorted/-/sorted-0.0.2.tgz#1406407e1e303bd8bccdf43824e7cb21db649cbc"
+  integrity sha512-kUvhe5p1NPmwX6D5TCRh8yyeT8PPvUOk16LDq8KyMdhGjBM0rUXY+PlvynuqHZBFpUDlSPuQfmvo+GW1Uf1EPw==
   dependencies:
     "@iterable-iterator/list" "^0.0.2"
 
