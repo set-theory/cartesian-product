@@ -6,14 +6,14 @@
 
 First, require the polyfill at the entry point of your application
 ```js
-require( 'regenerator-runtime/runtime' ) ;
+await import( 'regenerator-runtime/runtime.js' ) ;
 // or
 import 'regenerator-runtime/runtime.js' ;
 ```
 
 Then, import the library where needed
 ```js
-const cartesianProduct = require( '@set-theory/cartesian-product' ) ;
+const cartesianProduct = await import( '@set-theory/cartesian-product' ) ;
 // or
 import * as cartesianProduct from '@set-theory/cartesian-product' ;
 ```
