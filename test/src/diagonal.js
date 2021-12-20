@@ -82,7 +82,7 @@ test('diagonal finite rectangle (horizontal)', (t) => {
 
 test('diagonal large but finite', (t) => {
 	const N = 10;
-	const M = 10000;
+	const M = 10_000;
 	const result = list(take(diagonal(range(M), range(M)), N));
 	const expected = [
 		[0, 0],

@@ -62,13 +62,13 @@
     "test": "ava"
   },
   "dependencies": {
-    "@data-structure/deque": "^9.0.0",
-    "@iterable-iterator/count": "^1.0.0",
+    "@data-structure/deque": "^9.0.1",
+    "@iterable-iterator/count": "^1.0.1",
     "@iterable-iterator/cycle": "^1.0.0",
     "@iterable-iterator/iter": "^1.0.1",
-    "@iterable-iterator/list": "^1.0.0",
-    "@iterable-iterator/map": "^1.0.0",
-    "@iterable-iterator/next": "^2.0.0",
+    "@iterable-iterator/list": "^1.0.1",
+    "@iterable-iterator/map": "^1.0.1",
+    "@iterable-iterator/next": "^2.0.1",
     "@iterable-iterator/reversed": "^1.0.0"
   },
   "devDependencies": {
@@ -100,7 +100,7 @@
     "pinst": "2.1.6",
     "power-assert": "1.6.1",
     "regenerator-runtime": "0.13.9",
-    "xo": "0.39.1"
+    "xo": "0.47.0"
   },
   "ava": {
     "files": [
