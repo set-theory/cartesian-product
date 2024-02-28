@@ -1,13 +1,12 @@
 import test from 'ava';
 
-import {increasing} from '@total-order/primitive';
-import {lexicographical} from '@total-order/lex';
-
-import {take} from '@iterable-iterator/slice';
-import {sorted} from '@iterable-iterator/sorted';
+import {count} from '@iterable-iterator/count';
 import {list} from '@iterable-iterator/list';
 import {range} from '@iterable-iterator/range';
-import {count} from '@iterable-iterator/count';
+import {take} from '@iterable-iterator/slice';
+import {sorted} from '@iterable-iterator/sorted';
+import {lexicographical} from '@total-order/lex';
+import {increasing} from '@total-order/primitive';
 
 import {product, diagonal} from '#module';
 

@@ -1,7 +1,7 @@
-import {list} from '@iterable-iterator/list';
-import {reversed} from '@iterable-iterator/reversed';
 import {ncycle} from '@iterable-iterator/cycle';
+import {list} from '@iterable-iterator/list';
 import {map} from '@iterable-iterator/map';
+import {reversed} from '@iterable-iterator/reversed';
 
 import _product from './_product.js';
 

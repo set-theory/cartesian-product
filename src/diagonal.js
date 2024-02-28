@@ -1,8 +1,7 @@
 import {deque} from '@data-structure/deque';
-
+import {count} from '@iterable-iterator/count';
 import {iter} from '@iterable-iterator/iter';
 import {_next} from '@iterable-iterator/next';
-import {count} from '@iterable-iterator/count';
 
 /**
  * Computes the product of two iterables in a way that allows for one or both
@@ -35,12 +34,7 @@ export default function* diagonal(A, B) {
 		let _a = _next(itA);
 		let _b = _next(itB);
 		if (!_a.done) {
-			// eslint-disable-next-line no-negated-condition
-			if (!_b.done) {
-				_A.append(_a.value);
-				_B.append(_b.value);
-				for (let i = 0; i <= n; ++i) yield [_A.get(i), _B.get(n - i)];
-			} else {
+			if (_b.done) {
 				if (_B.length === 0) return;
 				do {
 					_A.append(_a.value);
@@ -50,9 +44,14 @@ export default function* diagonal(A, B) {
 				} while (!_a.done);
 
 				break;
+			} else {
+				_A.append(_a.value);
+				_B.append(_b.value);
+				for (let i = 0; i <= n; ++i) yield [_A.get(i), _B.get(n - i)];
 			}
-			// eslint-disable-next-line no-negated-condition
-		} else if (!_b.done) {
+		} else if (_b.done) {
+			break;
+		} else {
 			if (_A.length === 0) return;
 			do {
 				_B.append(_b.value);
@@ -61,8 +60,6 @@ export default function* diagonal(A, B) {
 				_b = _next(itB);
 			} while (!_b.done);
 
-			break;
-		} else {
 			break;
 		}
 	}
