@@ -29,7 +29,7 @@ _product( [count( ), count( )], 0, 2 ) ; // 00 01 02 03 04 05 06 07 08 09 ...
 
 [![License](https://img.shields.io/github/license/set-theory/cartesian-product.svg)](https://raw.githubusercontent.com/set-theory/cartesian-product/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@set-theory/cartesian-product.svg)](https://www.npmjs.org/package/@set-theory/cartesian-product)
-[![Tests](https://img.shields.io/github/workflow/status/set-theory/cartesian-product/ci:cover?event=push&label=tests)](https://github.com/set-theory/cartesian-product/actions/workflows/ci:cover.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/workflow/status/set-theory/cartesian-product/ci?event=push&label=tests)](https://github.com/set-theory/cartesian-product/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/set-theory/cartesian-product.svg)](https://github.com/set-theory/cartesian-product/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/set-theory/cartesian-product.svg)](https://github.com/set-theory/cartesian-product/issues)
 [![Downloads](https://img.shields.io/npm/dm/@set-theory/cartesian-product.svg)](https://www.npmjs.org/package/@set-theory/cartesian-product)

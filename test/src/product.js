@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {list} from '@iterable-iterator/list';
 
-import {product} from '../../src/index.js';
+import {product} from '#module';
 
 test('product', (t) => {
 	const x = (iterables, r, expected) => {

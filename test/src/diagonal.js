@@ -9,7 +9,7 @@ import {list} from '@iterable-iterator/list';
 import {range} from '@iterable-iterator/range';
 import {count} from '@iterable-iterator/count';
 
-import {product, diagonal} from '../../src/index.js';
+import {product, diagonal} from '#module';
 
 test('diagonal docstring example', (t) => {
 	const result = list(diagonal(range(2), range(2)));
